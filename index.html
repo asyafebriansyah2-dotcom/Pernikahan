@@ -415,18 +415,18 @@
           playAudio();
 
           // 🔽 Auto scroll ke bawah halaman
-          const scrollSpeed = 0.6;
-          const interval = 30; 
-          // 16ms ≈ 60fps
+          // const scrollSpeed = 0.6;
+          // const interval = 30; 
+          // // 16ms ≈ 60fps
 
-          const scrollInterval = setInterval(() => {
-              window.scrollBy(0, scrollSpeed);
+          // const scrollInterval = setInterval(() => {
+          //     window.scrollBy(0, scrollSpeed);
 
-              // stop kalau sudah sampai bawah
-              if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                  clearInterval(scrollInterval);
-              }
-          }, interval);
+          //     // stop kalau sudah sampai bawah
+          //     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          //         clearInterval(scrollInterval);
+          //     }
+          // }, interval);
       }
 
 
@@ -494,5 +494,12 @@
         // home.scrollIntoView({ behavior: "smooth" });
       });
     </script>
+
+
+
+
+
+
+
   </body>
 </html>
