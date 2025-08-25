@@ -29,7 +29,7 @@
 </head>
 
   <body>
-    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
+    <section id="hero" class="hero active w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-black">
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
         <h1>Diska & Endang</h1>
@@ -52,7 +52,7 @@
               <div class="label">Detik</div>
             </div>
           </div>
-        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+        <a href="#home" id="openInvitation" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
@@ -76,13 +76,36 @@
       </div>
     </nav>
 
-    <section id="home" data-aos="zoom-in-down" class="home">
+    <!-- Bottom Navbar -->
+    <!-- Bottom Navbar -->
+    <nav id="bottomNav" class="bottom-nav">
+      <a href="#home" class="active">
+        <i class="bi bi-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="#info">
+        <i class="bi bi-chat-left-quote"></i>
+        <span>Info</span>
+      </a>
+      <a href="#story">
+        <i class="bi bi-envelope"></i>
+        <span>Story</span>
+      </a>
+      <a href="#gallery">
+        <i class="bi bi-heart"></i>
+        <span>Gallery</span>
+      </a>
+    </nav>
+
+
+
+    <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2 data-aos="zoom-in">Acara Pernikahan</h2>
-            <h3>Diselengggarakan pada 09 November 2025 di Bidara, Jakarta Barat</h3>
-            <p>Oleh karena itu. dengan segala hormat, kami bermaksud untuk mengundang Bapak/ibu, Saudara/i, untuk hadir pada acara pernikahan kami</p>
+            <h2 data-aos="fade-up-right" data-aos-offset="300">Acara Pernikahan</h2>
+            <h3 data-aos="fade-up" data-aos-offset="305">Diselengggarakan pada 09 November 2025 di Bidara, Jakarta Barat</h3>
+            <p data-aos="fade-down" data-aos-offset="305">Oleh karena itu. dengan segala hormat, kami bermaksud untuk mengundang Bapak/ibu, Saudara/i, untuk hadir pada acara pernikahan kami</p>
           </div>
         </div>
 
@@ -91,12 +114,12 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-4">
-                <img src="img/diska.png" alt="Adiska Diva" class="img-responsive rounded-circle ">
+                <img src="img/diska.png" alt="Adiska Diva" class="img-responsive rounded-circle" data-aos="fade-right" data-aos-offset="305">
               </div>
               <div class="col-8">
-                <h3 data-aos="fade-right"> Adiska Diva Isnaini</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem temporibus iusto optio.</p>
-                <p>Putri dari Bpk.Achamd Sofyan <br> dan <br> Ibu lorem</p>
+                <h3 data-aos="fade-up" data-aos-offset="305"> Adiska Diva Isnaini</h3>
+                <p data-aos="fade-down" data-aos-offset="305">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem temporibus iusto optio.</p>
+                <p data-aos="fade-up" data-aos-offset="305">Putri dari Bpk.Achamd Sofyan <br> dan <br> Ibu lorem</p>
               </div>
             </div>
           </div>
@@ -104,12 +127,12 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3 data-aos="fade-left"> Endang Prayoko</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem temporibus iusto optio.</p>
-                <p>Putra dari Bpk.Alm  <br> dan <br> Ibu lorem</p>
+                <h3 data-aos="fade-up" data-aos-offset="305"> Endang Prayoko</h3>
+                <p data-aos="fade-down" data-aos-offset="305">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem temporibus iusto optio.</p>
+                <p data-aos="fade-up" data-aos-offset="305">Putra dari Bpk.Alm  <br> dan <br> Ibu lorem</p>
               </div>
               <div class="col-4">
-                <img src="img/Endang.png" alt="Endang Prayoko" class="img-responsive rounded-circle ">
+                <img src="img/Endang.png" alt="Endang Prayoko" class="img-responsive rounded-circle" data-aos="fade-left" data-aos-offset="305">
               </div>
             </div>
           </div>
@@ -123,56 +146,56 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">Alamat: Musholla Nurul Hikmah.<br>JL.Bidara No.38, Wijaya Kusuma, Kec. Grogol petamburan, Kota Jakarta Barat. 11460</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.677904452862!2d106.76775527770995!3d-6.1523180000000055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76b191105d5%3A0x224aaeef5bac72e9!2sMUSHOLLA%20NURUL%20HIKMAH!5e0!3m2!1sid!2sid!4v1755955244958!5m2!1sid!2sid" width="95%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="https://maps.app.goo.gl/aSmdiPvMJ5WUBxRn8" target="_blank" class="btn btn-light btn-sm my-2 ">Klik untuk Membuka Maps</a>
-            <p class="description">Diharapkan untuk tidak salah alamat dan Tanggal. Manakala tiba di tujuan 
+            <h2 data-aos="fade-up-left" data-aos-offset="300">Informasi Acara</h2>
+            <p data-aos="fade-up" data-aos-offset="305" class="alamat">Alamat: Musholla Nurul Hikmah.<br>JL.Bidara No.38, Wijaya Kusuma, Kec. Grogol petamburan, Kota Jakarta Barat. 11460</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.677904452862!2d106.76775527770995!3d-6.1523180000000055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76b191105d5%3A0x224aaeef5bac72e9!2sMUSHOLLA%20NURUL%20HIKMAH!5e0!3m2!1sid!2sid!4v1755955244958!5m2!1sid!2sid" data-aos="zoom-in" data-aos-offset="305" width="95%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.app.goo.gl/aSmdiPvMJ5WUBxRn8" target="_blank" data-aos="fade-up" data-aos-offset="305" class="btn btn-light btn-sm my-2 ">Klik untuk Membuka Maps</a>
+            <p data-aos="fade-down" data-aos-offset="305" class="description">Diharapkan untuk tidak salah alamat dan Tanggal. Manakala tiba di tujuan 
               namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat</p>
           </div>
         </div>
 
         <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
+          <div class="col-md-5 col-10" data-aos="zoom-in-down" data-aos-offset="305">
             <div class="card text-center text-bg-light mb-4">
-              <div class="card-header">
+              <div class="card-header" data-aos="fade-down" data-aos-offset="305">
               Akad Nikah
               </div>
-              <div class="card-body">
+              <div class="card-body" data-aos="fade-up" data-aos-offset="305">
                 <div class="row justify-content-center">
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-offset="306">
                     <i class="bi bi-clock d-block"></i>
                     <span>08.00 - 10.00</span>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-down" data-aos-offset="306">
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Minggu, 09 November 2025</span>
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
+              <div class="card-footer" data-aos="fade-up" data-aos-offset="305">
                 Saat acara akad, diharapkan untuk kondusif menjaga kekhitdmatan dan kekhusyuan seluruh proses
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-10">
+          <div class="col-md-5 col-10" data-aos="zoom-in" data-aos-offset="305">
             <div class="card text-center text-bg-light">
-              <div class="card-header">
+              <div class="card-header" data-aos="fade-up" data-aos-offset="305">
               Resepsi
               </div>
-              <div class="card-body">
+              <div class="card-body" data-aos="fade-up" data-aos-offset="305">
                 <div class="row justify-content-center">
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-down" data-aos-offset="306">
                     <i class="bi bi-clock d-block"></i>
                     <span>11.00 - selesai</span>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-up" data-aos-offset="306">
                     <i class="bi bi-calendar3 d-block"></i>
                     <span>Minggu, 09 November 2025</span>
                   </div>
                 </div>
               </div>
-              <div class="card-footer">
+              <div class="card-footer" data-aos="fade-up" data-aos-offset="306">
                 Saat acara akad, diharapkan untuk kondusif menjaga kekhitdmatan dan kekhusyuan seluruh proses
               </div>
             </div>
@@ -390,7 +413,22 @@
           rootElement.style.scrollBehavior = 'smooth';
           // localStorage.setItem('opened','true');
           playAudio();
+
+          // 🔽 Auto scroll ke bawah halaman
+          const scrollSpeed = 0.6;
+          const interval = 30; 
+          // 16ms ≈ 60fps
+
+          const scrollInterval = setInterval(() => {
+              window.scrollBy(0, scrollSpeed);
+
+              // stop kalau sudah sampai bawah
+              if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                  clearInterval(scrollInterval);
+              }
+          }, interval);
       }
+
 
       function playAudio(){
         song.volume = 1;
@@ -424,10 +462,37 @@
     <script>
       AOS.init({
         duration: 1000, // durasi animasi (ms)
-        once: true,     // animasi hanya sekali jalan
+        once: false,     // animasi hanya sekali jalan
+      });
+    </script>
+
+    <script>
+        document.getElementById("openInvitation").addEventListener("click", function() {
+        document.getElementById("bottomNav").style.display = "flex";
       });
     </script>
 
 
+    <script>
+      document.getElementById("openInvitation").addEventListener("click", function(e){
+        e.preventDefault();
+
+        const hero = document.getElementById("hero");
+        const home = document.getElementById("home");
+        const button = document.getElementById("openInvitation");
+
+        // kasih efek fade-out hero (opacity rendah)
+        hero.classList.add("fade-out");
+
+        // sembunyikan tombol undangan
+        button.classList.add("hidden");
+
+        // tampilkan section home (tetap di bawah hero)
+        home.classList.add("active");
+
+        // ❌ jangan scroll otomatis
+        // home.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
