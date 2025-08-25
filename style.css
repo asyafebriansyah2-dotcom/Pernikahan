@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  margin: 2;
+  padding: 2;
+  overflow-x: hidden; 
 }
 
 :root {
@@ -26,13 +29,38 @@ body {
   background-position: center 100%;
   background-repeat: no-repeat;
   z-index: -1;
-  filter: grayscale();
-}
+  }
 
 .hero {
   position: relative;
   min-height: 100vh;
 }
+
+#hero, #home {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#hero.active, #home.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#hero.fade-out {
+  opacity: 5; /* jangan hilang total, biar smooth background */
+  visibility: visible;
+}
+
+#openInvitation {
+  transition: opacity 0.5s ease;
+}
+#openInvitation.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 
 .hero h1, .hero h4, .hero p{
   text-shadow: var(--shadow);
@@ -114,8 +142,36 @@ body {
     font-weight: 400;
 }
 
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55px;  /* dari 65px -> lebih kecil */
+  background: #1a1a1a;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #333;
+  z-index: 1000;
+}
+
+.bottom-nav a {
+  flex: 1;
+  text-align: center;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px; /* kecilin dikit teks */
+}
+
+.bottom-nav a i {
+  font-size: 18px; /* icon juga dikecilkan */
+  display: block;
+}
+
+
 .home {
-    background: linear-gradient(135deg, #d3e3f7 100%, #ffff 10%);
+    background-color: rgb(158, 150, 240);
     background-size: cover;
     min-height: 100vh;
     margin-top: -5rem;
@@ -124,14 +180,14 @@ body {
 }
 
 .home h2 , .story h2 , .gallery h2{
-    color: rgb(25, 25, 25);
+    color: rgb(16, 15, 15);
     font-family: 'Sacramento';
     font-size: 2.4rem;
     font-weight: bold;
 }
 
 .home h3{
-    color: #444;
+    color: #151515;
     font-size:0.8rem;
     font-family: 'Times New Roman';
     margin-bottom: 1rem;
@@ -140,7 +196,7 @@ body {
 .home p{
     font-size: 0.5rem;
     font-family: 'Times New Roman';
-    color: #666;
+    color: #141414;
 }
 
 .home .couple{
